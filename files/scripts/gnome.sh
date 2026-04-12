@@ -3,4 +3,4 @@
 set -oue pipefail
 
 #Install Gnome
-dnf -y install @gnome-desktop-environment --setopt=install_weak_deps=False
+dnf -y group install "GNOME Desktop Environment" --setopt=install_weak_deps=False
