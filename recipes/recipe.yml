@@ -9,6 +9,7 @@ image-version: latest
 
 # module configuration, executed in order
 modules:
+  
   - type: script
     
     # run scripts
@@ -16,22 +17,28 @@ modules:
     - kernel-cachyos.sh
 
   - type: dnf
-  
+    
     # install packages
     group-install:
+      
       with-optional: false
       packages:
+      
         - gnome-desktop
         
     # install system packages    
     install:
+    
       packages:
+      
         - fastfetch
         - fish
         
     # remove packages
     remove:
+      
       packages:
+        
         - nvtop
         - htop
         - firefox
@@ -41,7 +48,9 @@ modules:
     
     # enable systemd services
     system:
+      
       enabled:
+        
         - gdm
 
   # this sets up the proper policy and signing files for signed images to work fully
