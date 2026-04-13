@@ -4,11 +4,11 @@ Custom Universal Blue Gnome image by BlastPKMN
 
 ## Configuration
 
-Fedora Silverblue base OS image >> Universal Blue rebased OS image + GNOME desktop environment + CachyOS kernel
+Universal Blue rebased OS image + CachyOS kernel + GNOME desktop environment
 
 ## Installation
 
-To rebase an existing Fedora Silverblue installation to the latest build:
+To rebase an existing Fedora atomic desktop installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
