@@ -1,7 +1,7 @@
 ---
 # custom image details
 name: ublue-gnome
-description: Fedora Silverblue base OS image >> Universal Blue rebased OS image + GNOME desktop environment + CachyOS kernel
+description: Custom Universal Blue Gnome image by BlastPKMN
 
 # base image
 base-image: ghcr.io/ublue-os/base-main
