@@ -4,7 +4,7 @@ Custom Universal Blue Gnome image by BlastPKMN
 
 ## Configuration
 
-Universal Blue rebased OS image + CachyOS kernel + GNOME desktop environment
+Universal Blue OS image template + CachyOS kernel + GNOME desktop environment
 
 ## Installation
 
