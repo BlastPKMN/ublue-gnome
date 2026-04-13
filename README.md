@@ -2,7 +2,7 @@
 
 BlastPKMN's custom Universal Blue Gnome image
 
-## Description
+## Configuration
 
 Fedora Silverblue base OS image >> Universal Blue rebased OS image + GNOME desktop environment + CachyOS kernel
 
