@@ -1,7 +1,7 @@
 ---
 # custom image details
 name: ublue-gnome
-description: Custom Universal Blue Gnome image by BlastPKMN
+description: Custom Universal Blue GNOME image by BlastPKMN
 
 # base image
 base-image: ghcr.io/ublue-os/base-main
