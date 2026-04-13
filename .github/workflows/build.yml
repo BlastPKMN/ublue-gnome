@@ -1,19 +1,33 @@
+# build details
 name: bluebuild
+
 on:
   schedule:
+    
+    # build at 06:00 UTC every day (20 minutes after last ublue images start building)
     - cron:
-        "00 06 * * *" # build at 06:00 UTC every day (20 minutes after last ublue images start building)
+        "00 06 * * *" 
+  
   push:
     paths-ignore:
-      - "**.md" # do not rebuild if only documentation has changed
+      
+      # do not rebuild if only documentation has changed
+      - "**.md"
 
   pull_request:
-  workflow_dispatch: # allow manually triggering builds
+  
+  # allow manually triggering builds
+  workflow_dispatch:
+
 concurrency:
+  
   # only run one build at a time
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
+
 jobs:
+  
+  # job to build custom image
   bluebuild:
     name: Build Custom Image
     runs-on: ubuntu-latest
@@ -21,12 +35,20 @@ jobs:
       contents: read
       packages: write
       id-token: write
+    
     strategy:
-      fail-fast: false # stop GitHub from cancelling all matrix builds if one fails
+      
+      # stop GitHub from cancelling all matrix builds if one fails
+      fail-fast: false
+      
       matrix:
-        recipe: # add your recipes here
+        
+        # add your recipes here
+        recipe:
           - recipe.yml
+    
     steps:
+      
       # the build is fully handled by the reusable GitHub action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
