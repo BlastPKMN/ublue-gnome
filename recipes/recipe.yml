@@ -14,7 +14,8 @@ modules:
     
     # run scripts
     scripts:
-    - kernel-cachyos.sh
+    
+      - kernel-cachyos.sh
 
   - type: dnf
     
