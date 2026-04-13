@@ -8,7 +8,7 @@ Universal Blue OS image template + GNOME desktop environment + CachyOS kernel
 
 ## Installation
 
-To rebase an existing Fedora atomic desktop installation to the latest build:
+To rebase an existing Fedora atomic installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
