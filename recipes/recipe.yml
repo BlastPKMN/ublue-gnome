@@ -1,32 +1,35 @@
 ---
+# custom image details
 name: ublue-gnome
-description: This is my personal OS image.
+description: Fedora Silverblue base OS image >> Universal Blue rebased OS image + GNOME desktop environment + CachyOS kernel
 
-#Base Image
+# base image
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest
 
-#Module Configuration, Executed in Order
+# module configuration, executed in order
 modules:
   - type: script
+    
+    # run scripts
     scripts:
     - kernel-cachyos.sh
 
   - type: dnf
-    #Install Packages
+  
+    # install packages
     group-install:
       with-optional: false
       packages:
-        #Gnome Desktop
         - gnome-desktop
         
+    # install system packages    
     install:
       packages:
-        #System Packages
         - fastfetch
         - fish
         
-    #Remove Packages
+    # remove packages
     remove:
       packages:
         - nvtop
@@ -35,10 +38,11 @@ modules:
         - firefox-langpacks
 
   - type: systemd
+    
+    # enable systemd services
     system:
-      #Enable systemd services
       enabled:
         - gdm
 
-  #This sets up the proper policy & signing files for signed images to work fully
+  # this sets up the proper policy and signing files for signed images to work fully
   - type: signing
