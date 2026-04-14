@@ -4,7 +4,7 @@ name: ublue-gnome
 description: Custom Universal Blue GNOME image by BlastPKMN
 
 # base image
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 # module configuration, executed in order
@@ -18,14 +18,6 @@ modules:
       - kernel-cachyos.sh
 
   - type: dnf
-    
-    # install packages
-    group-install:
-      
-      with-optional: false
-      packages:
-      
-        - gnome-desktop
         
     # install system packages    
     install:
@@ -44,15 +36,6 @@ modules:
         - htop
         - firefox
         - firefox-langpacks
-
-  - type: systemd
-    
-    # enable systemd services
-    system:
-      
-      enabled:
-        
-        - gdm
 
   # this sets up the proper policy and signing files for signed images to work fully
   - type: signing
