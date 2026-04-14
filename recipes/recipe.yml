@@ -1,7 +1,7 @@
 ---
 # custom image details
-name: ublue-gnome
-description: Custom Universal Blue GNOME image by BlastPKMN
+name: ublue-silverblue
+description: Custom Universal Blue Silverblue image by BlastPKMN
 
 # base image
 base-image: ghcr.io/ublue-os/silverblue-main
