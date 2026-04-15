@@ -32,14 +32,15 @@ modules:
       
       packages:
         
-        - nvtop
-        - htop
-        - yelp
         - firefox
         - firefox-langpacks
-        - malcontent-control
-        - gnome-system-monitor
         - gnome-disk-utility
+        - gnome-system-monitor
+        - gnome-tour
+        - htop
+        - malcontent-control
+        - nvtop
+        - yelp
 
   # this sets up the proper policy and signing files for signed images to work fully
   - type: signing
