@@ -19,7 +19,7 @@ modules:
 
   - type: dnf
         
-    # install system packages    
+    # install packages    
     install:
     
       packages:
