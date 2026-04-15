@@ -38,15 +38,7 @@ modules:
         - firefox-langpacks
         - help
         - org.gnome.Help
-        - org.freedesktop.MalcontentControl
-
-  - type: default-flatpaks
-
-    # remove GNOME packages
-    notify: false
-    system:
-    remove:
-        
+        - org.freedesktop.MalcontentControl 
         - org.fedoraproject.MediaWriter
         - org.gnome.Calculator
         - org.gnome.Calendar
