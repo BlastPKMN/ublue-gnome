@@ -42,9 +42,11 @@ modules:
 
   - type: default-flatpaks
 
-      # remove GNOME packages
-      notify: false
-      remove:
+    # remove GNOME packages
+    notify: false
+    remove:
+
+      packages:
         
         - org.fedoraproject.MediaWriter
         - org.gnome.Calculator
