@@ -34,23 +34,13 @@ modules:
         
         - nvtop
         - htop
+        - yelp
         - firefox
         - firefox-langpacks
         - malcontent-control
         - mediawriter
-        - gnome-calculator
-        - gnome-calendar
-        - gnome-characters
-        - gnome-clocks
-        - gnome-connections
-        - gnome-contacts
-        - gnome-font-viewer
-        - yelp
-        - gnome-maps
-        - papers
-        - snapshot
-        - gnome-tour
-        - gnome-weather
+        - gnome-system-monitor
+        - gnome-disk-utility
 
   # this sets up the proper policy and signing files for signed images to work fully
   - type: signing
