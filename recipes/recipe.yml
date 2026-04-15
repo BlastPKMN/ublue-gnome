@@ -26,6 +26,7 @@ modules:
       
         - fastfetch
         - fish
+        - gnome-tweaks
         
     # remove packages
     remove:
