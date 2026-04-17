@@ -18,14 +18,14 @@ modules:
       - kernel-cachyos.sh
 
   - type: dnf
-    
-    # install packages    
-    install:
 
     repos:
 
       - https://copr.fedorainfracloud.org/coprs/mazharhussain/gdm-settings/repo/fedora-%OS_VERSION%/mazharhussain-gdm-settings-fedora-%OS_VERSION%.repo
     
+    # install packages    
+    install:
+
       packages:
       
         - fastfetch
