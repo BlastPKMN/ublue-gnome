@@ -1,4 +1,4 @@
-# ublue-silverblue &nbsp; [![bluebuild build badge](https://github.com/blastpkmn/ublue-gnome/actions/workflows/build.yml/badge.svg)](https://github.com/blastpkmn/ublue-gnome/actions/workflows/build.yml)
+# ublue-silverblue &nbsp; [![bluebuild build badge](https://github.com/blastpkmn/ublue-silverblue/actions/workflows/build.yml/badge.svg)](https://github.com/blastpkmn/ublue-silverblue/actions/workflows/build.yml)
 
 Custom Universal Blue Silverblue image by BlastPKMN
 
